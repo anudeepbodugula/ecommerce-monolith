@@ -85,8 +85,8 @@ resource "aws_ecs_service" "ecommerce_service" {
   desired_count   = 1
   launch_type     = "FARGATE"
   network_configuration {
-    subnets          = ["subnet-06d69871ddd72f1b4"]  # Replace with your subnet IDs
-    security_groups  = ["sg-0da7d6a7a3dd672a0"]  # Replace with your security group IDs
+    subnets          = ["subnet-id"]  # Replace with your subnet IDs
+    security_groups  = ["sg-id"]  # Replace with your security group IDs
     assign_public_ip = true
   }
 }
